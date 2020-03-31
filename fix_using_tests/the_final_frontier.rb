@@ -1,6 +1,7 @@
 require 'pry'
 
 def generate_star_date
+  binding.pry
   (rand(100000) + 400000) / 10.0
 end
 
@@ -13,11 +14,11 @@ end
 
 
 def engage
-  binding.pry
+  # binding.pry
   date = generate_star_date
   puts state_log(date)
 end
-engage
+# engage
 
 
 
